@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %} {{title}} {% endblock %}
+
+{% block content %}
+   <div class="form home-form">
+      <form action="checkview" method="POST" >
+         {% csrf_token %}
+         <label for="">Room Name</label>
+         <input type="text" name="room_name"><br>
+
+         <label for="">Username</label>
+         <input type="text" name="username"><br>
+
+         <input type="submit" value="Enter Room" class="btn">
+      </form>
+   </div>
+ 
+{% endblock %}

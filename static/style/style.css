@@ -1,0 +1,151 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:arial;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+.logo{
+    text-align:center;
+}
+
+h3{
+    font-size:30px;
+}
+
+header{
+    padding:20px 0 ;
+    background-color:darkcyan;
+}
+
+header  a{
+    color:white;
+    text-decoration:none;
+}
+
+.form{
+   
+    background-color:rgb(236, 236, 236);
+    padding:50px 30px;
+    width:100%;
+    border-radius:10px;
+    
+}
+
+.home-form{
+    width:95%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:85vh;
+    margin:10px auto;
+}
+
+.form form{
+    width:50%;
+    margin:auto;
+}
+
+.form form input{
+    width:100%;
+    margin:5px 0;
+    padding:8px;
+    border-radius:5px;
+}
+
+.form form  input:focus{
+    border:none;
+    outline:2px solid darkcyan ;
+}
+
+.form form label{
+    color:grey;
+}
+
+.form form  button{
+    background-color:darkcyan;
+    padding:10px 15px;
+    color:white;
+    border:none;
+    font-weight:bold;
+    border-radius:5px;
+    margin-top:10px;
+    cursor:pointer;
+    transition:all 300ms ease;
+}
+
+.form form  button:hover{
+    background-color:rgb(68, 223, 223);
+    transform:scale(1.1);
+}
+
+.form .btn{
+    background-color:darkcyan;
+    color:white;
+    font-size:16px;
+    border:none;
+    cursor:pointer;
+    transition:all 300ms ease;
+}
+
+.form .btn:hover{
+    background-color: rgb(3, 185, 185);
+}
+
+.chat-room{
+    text-align:center;
+    padding:10px 0;
+    color:grey;
+}
+
+#display{
+    background-color:rgb(236, 236, 236);
+    padding:20px 30px;
+    border-radius:10px;
+    margin:10px 0;
+}
+
+#display .chat{
+    background-color:white;
+    margin-bottom:10px;
+    padding:10px 15px;
+    border-radius:5px;
+}
+
+#display .chat b{
+    color:grey;
+}
+
+#display .chat p{
+    margin:5px 0;
+    margin-left:10px;
+}
+
+#display .chat span{
+    font-size:12px;
+    color:grey;
+}
+
+footer{
+    background-color:darkcyan;
+    color:white;
+    text-align:center;
+    padding:10px 0;
+}
+
+@media(max-width:750px){
+    .form form  {
+        width:90%;
+    }
+    .home-form{
+        height:50vh;
+    }
+}
